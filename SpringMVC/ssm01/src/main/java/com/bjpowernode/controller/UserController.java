@@ -61,6 +61,7 @@ public class UserController {
         int si= (int) (Math.random()*(9999-1000)+1000);
         userId=userId+si;
        user.setUserId(userId);
+        System.out.println();
         return userService.createUser(user);
     }
 
